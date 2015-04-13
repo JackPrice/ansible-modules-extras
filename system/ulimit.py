@@ -271,7 +271,7 @@ def main():
             module.exit_json(changed=False)
         if exists and not exact:
             update_limit(path=params['path'], limit=limit)
-        if not exists and not exaxt:
+        if not exists and not exact:
             add_limit(path=params['path'], limit=limit)
     else:
         if exists:
