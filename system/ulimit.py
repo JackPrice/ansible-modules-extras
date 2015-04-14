@@ -246,9 +246,9 @@ def main():
     domain = str(params['domain'])
 
     if params['user']:
-        domain = str(params['domain'])
+        domain = str(params['user'])
     if params['group']:
-        domain = '@' + str(params['domain'])
+        domain = '@' + str(params['group'])
 
     limit = dict(
         domain = domain,
